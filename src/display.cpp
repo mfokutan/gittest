@@ -12,8 +12,9 @@ using namespace std;
 //============================================================================
 void diplay_array(int *ptr, size_t size)
 {
-	for (int i = 0; i < size; i++) {
-		cout << ptr[i] << endl;
+	for (size_t i = 0; i < size; i++) {
+		cout << ptr[i];
+		cout << (i < (size - 1) ? ", " : "\n\n");
 	}
 }
 //============================================================================
